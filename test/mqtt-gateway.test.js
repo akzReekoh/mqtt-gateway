@@ -41,6 +41,16 @@ describe('Gateway', function () {
 			mqttGateway.on('message', function (message) {
 				if (message.type === 'ready')
 					done();
+				else if (message.type === 'requestdeviceinfo') {
+					if (message.data.deviceId === DEVICE_ID1 || message.data.deviceId === DEVICE_ID2) {
+						mqttGateway.send({
+							type: message.data.requestId,
+							data: {
+								_id: message.data.deviceId
+							}
+						});
+					}
+				}
 			});
 
 			mqttGateway.send({

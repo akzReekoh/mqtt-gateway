@@ -1,5 +1,7 @@
 language: node_js
 node_js:
-  - "4.2.2"
+  - "4.4.3"
+sudo: required
+dist: trusty
 notifications:
   slack: reekoh:eFsOWQBeXXs9jKVcqiqo4Ifg

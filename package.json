@@ -1,7 +1,7 @@
 {
   "name": "mqtt-gateway",
   "description": "Standard MQTT Protocol Support for the Reekoh IoT Platform. Allows hardware devices to connect to a Reekoh instance via the MQTT Protocol.",
-  "version": "0.1.19",
+  "version": "1.1.1",
   "author": "Reekoh, Inc.",
   "main": "app.js",
   "scripts": {
@@ -12,25 +12,25 @@
     "url": "https://github.com/Reekoh/mqtt-gateway"
   },
   "dependencies": {
-    "lodash.clone": "^3.0.3",
-    "lodash.indexby": "^3.1.1",
-    "lodash.isempty": "^3.0.4",
-    "lodash.map": "^3.1.4",
-    "lodash.trim": "^3.0.1",
-    "lodash.uniq": "^3.2.2",
-    "mosca": "^0.32.1"
+    "async": "^1.5.2",
+    "lodash.isempty": "^4.2.1",
+    "lodash.keyby": "^4.3.0",
+    "lodash.map": "^4.3.0",
+    "lodash.trim": "^4.3.0",
+    "lodash.uniq": "^4.2.1",
+    "mosca": "^1.3.0"
   },
   "devDependencies": {
-    "async": "^1.4.2",
-    "gulp": "^3.9.0",
-    "gulp-cli": "^1.1.0",
+    "async": "^1.5.2",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
     "gulp-jshint": "^2.0.0",
     "gulp-json-lint": "^0.1.0",
     "gulp-mocha": "^2.2.0",
-    "gulp-plumber": "^1.0.1",
-    "mocha": "^2.3.4",
-    "mqtt": "^1.4.3",
-    "should": "^7.1.0"
+    "gulp-plumber": "^1.1.0",
+    "mocha": "^2.4.5",
+    "mqtt": "^1.10.0",
+    "should": "^8.3.1"
   },
   "license": "LGPL-3.0"
 }

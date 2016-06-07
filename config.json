@@ -4,29 +4,39 @@
 	"label": "QOS",
 	"enum": ["0", "1", "2"],
 	"default": "0",
-	"help": "The QOS to be used for message exchanges. Default: 0"
+	"help": "(Optional) The QOS to be used for message exchanges. Default: 0"
+  },
+  "user": {
+	"type": "String",
+	"label": "Username",
+	"help": "(Optional) The username to use if you want to authenticate incoming traffic."
+  },
+  "password": {
+	"type": "Password",
+	"label": "Password",
+	"help": "(Optional) The password to use if you want to authenticate incoming traffic."
   },
   "data_topic": {
 	"type": "String",
 	"label": "Data Topic",
 	"default": "reekoh/data",
-	"help": "The topic to listen to for device data. Default reekoh/data"
+	"help": "(Optional) The topic to listen to for device data. Default reekoh/data"
   },
   "message_topic": {
 	"type": "String",
 	"label": "Message Topic",
 	"default": "reekoh/messages",
-	"help": "The topic to listen to for device messages or commands. Default: reekoh/messages"
+	"help": "(Optional) The topic to listen to for device messages or commands. Default: reekoh/messages"
   },
   "groupmessage_topic": {
 	"type": "String",
 	"label": "Group Message Topic",
 	"default": "reekoh/groupmessages",
-	"help": "The topic to listen to for group messages or commands. Default: reekoh/groupmessages"
+	"help": "(Optional) The topic to listen to for group messages or commands. Default: reekoh/groupmessages"
   },
   "authorized_topics": {
 	"type": "String",
 	"label": "Authorized Topics",
-	"help": "Other authorized topics the devices can subscribe from and/or publish to."
+	"help": "(Optional) Other, comma-separated, authorized topics the devices can subscribe from and/or publish to."
   }
 }
